@@ -87,3 +87,6 @@ scripts/config --disable DEBUG_INFO
 **开始编译**  
 Centos：make rpm-pkg  
 Debian：make deb-pkg
+
+如果编译遇到没有规则可制作目标“debian/certs/debian-uefi-certs.pem”错误
+编辑.config文件将CONFIG_SYSTEM_TRUSTED_KEYS设置为CONFIG_SYSTEM_TRUSTED_KEYS=""
